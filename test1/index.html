@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview Carousel</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 計數器 -->
+  <div class="counter">1 / 12</div>
+
+  <!-- 主要輪播（左右位置不變，但內容改成上下切頁） -->
+  <div class="carousel">
+
+    <!-- 上一頁（本質是往上） -->
+    <button id="prev" class="btn">〈</button>
+
+    <!-- 顯示區：10 張（5x2） -->
+    <div class="grid-wrapper">
+      <!-- 你的 items（不用 active） -->
+      <div class="item">
+        <img src="https://images.plurk.com/3nI2DyLZ7kblUYzkcAPHSC.png" />
+        <p class="caption">毛毛</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-right" src="https://images.plurk.com/3pwfztEbECWwRJdoZcxIi5.jpg"/>
+        <p class="caption">毛毛</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/5BpLLQl50arMpNDWvikBuD.png"/>
+        <p class="caption">毛毛</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-right" src="https://images.plurk.com/2F6JDocdfcHXTykthtuB7J.jpg" />
+        <p class="caption">毛毛</p>
+      </div>
+      
+     <div class="item">
+        <img  src="https://images.plurk.com/i5o62PeN6B3J8D0PRVFDh.jpg" />
+        <p class="caption">毛毛</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/2zYmrMxi5ahOrhOIPTk23n.jpg" />
+        <p class="caption">毛毛</p>
+      </div>
+      
+      <div class="item">
+        <img src="https://images.plurk.com/6fWUgdh6h63X9UTrjBtaWC.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/5YluwHY7oEC6A5zNzba510.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/2M23JFBNSytGwuTLbVo16C.png  " />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-right" src="https://images.plurk.com/3FWtaaxT0Qi19QUXO2Mu3P.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-left" src="https://images.plurk.com/3f2neJIJLnCYaPJcRk9AAI.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/17jsMLPdhmVxL6syuJV57X.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-right" src="https://images.plurk.com/3GfNKmvZsHzHxjKI9sE5Fv.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-right" src="https://images.plurk.com/1uOqp7e4lBtHDifALBXHsB.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/43An546kfpMJ9mJ9M8Bfey.png" />
+        <p class="caption">鉛筆</p>
+      </div>
+      
+        <div class="item">
+        <img class="pos-left" src="https://images.plurk.com/3D8kWkEey0nVVlNIcWWDJn.png" />
+        <p class="caption">陳臣</p>
+      </div>
+
+        <div class="item">
+        <img  src="https://images.plurk.com/4TrWjTAwJ6UlKmePVMAya9.png" />
+        <p class="caption">陳臣</p>
+      </div>
+
+      <div class="item">
+        <img src="https://images.plurk.com/vWZvgliIEUWV3zsdCoufa.png" />
+        <p class="caption">陳臣</p>
+      </div>
+      
+      <div class="item">
+        <img src="https://images.plurk.com/6dlrZ0AEsjlB3dCh92gcjJ.png" />
+        <p class="caption">海曳行人</p>
+      </div>
+
+       <div class="item">
+        <img src="https://images.plurk.com/2bAFM0k8bRI9iUHCPb6ET4.png" />
+        <p class="caption">海曳行人</p>
+      </div>
+      
+       <div class="item">
+        <img src="https://images.plurk.com/6aOGbZlCOYivBXa9gu94Vm.png" />
+        <p class="caption">yy</p>
+      </div>
+
+       <div class="item">
+        <img class="https://images.plurk.com/6Uw4Q7t3yGeLxyBILXIGa8.png" />
+        <p class="caption">yy</p>
+      </div>
+
+       <div class="item">
+        <img src="https://images.plurk.com/6gDZWe169bfSsAokmyU1Fd.png" />
+        <p class="caption">yy</p>
+      </div>
+
+      <div class="item">
+        <img src="Wei Ze Jhen-1.jpg" ="Wei Ze Jhen-1.jpg" />
+        <p class="caption">Wei Ze Jhen</p>
+      </div>
+
+      <div class="item">
+        <img src="Wei Ze Jhen-2.png" ="Wei Ze Jhen-2.png" />
+        <p class="caption">Wei Ze Jhen</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-top" src="細流-1.png" ="細流-1.png" />
+        <p class="caption">細流</p>
+      </div>
+
+       <div class="item">
+        <img src="禁用靜音.png" ="禁用靜音.png" />
+        <p class="caption">禁用靜音</p>
+      </div>
+
+      <div class="item">
+        <img src="秋目1.png" ="秋目1.png" />
+        <p class="caption">秋目1</p>
+      </div>
+
+      <div class="item">
+        <img src="雨谷叢生.jpg" ="雨谷叢生.jpg" />
+        <p class="caption">雨谷叢生1</p>
+      </div>
+
+      <div class="item">
+        <img src="嚴四九2.png" ="嚴四九2.png" />
+        <p class="caption">嚴四九</p>
+      </div>
+      <div class="item">
+        <img src="Okada Yui.png" ="Okada Yui.png" />
+        <p class="caption">Okada Yui</p>
+      </div>
+      
+       <div class="item">
+        <img src="地下室.png" ="地下室.png" />
+        <p class="caption">地下室</p>
+      </div>
+
+      <div class="item">
+        <img src="貢丸.png" ="貢丸.png" />
+        <p class="caption">貢丸</p>
+      </div>
+
+      <div class="item">
+        <img src="阿然-1.PNG" ="阿然-1.PNG" />
+        <p class="caption">阿然</p>
+      </div>
+      
+     <div class="item">
+        <img src="是大腿誒幹(3).png" ="是大腿誒幹(3).png" />
+        <p class="caption">是大腿誒幹</p>
+      </div>
+
+       <div class="item">
+        <img src="是大腿誒幹.png" ="是大腿誒幹.png" />
+        <p class="caption">是大腿誒幹</p>
+      </div>
+
+       <div class="item">
+        <img src="月光光閃亮亮捌柒鬼.jpg" ="月光光閃亮亮捌柒鬼.jpg" />
+        <p class="caption">月光光閃亮亮捌柒鬼</p>
+      </div>
+    
+      <div class="item">
+        <img src="1.PNG" ="1.PNG" />
+        <p class="caption">乎咪</p>
+      </div>
+
+       <div class="item">
+        <img src="2.PNG" ="2.PNG" />
+        <p class="caption">乎咪</p>
+      </div>
+      
+      <div class="item">
+        <img src="拍立得2.PNG" ="拍立得2.PNG" />
+        <p class="caption">乎咪</p>
+      </div>
+
+      <div class="item">
+        <img src="螢河2.png" ="螢河2.png" />
+        <p class="caption">螢河</p>
+      </div>
+
+      <div class="item">
+        <img src="螢河4(3).png" ="螢河4(3).png" />
+        <p class="caption">螢河</p>
+      </div>
+      
+      <div class="item">
+        <img src="明-1.PNG" ="明-1.PNG" />
+        <p class="caption">明</p>
+      </div>
+
+      <div class="item">
+        <img src="明-2.png" ="明-2.png" />
+        <p class="caption">明</p>
+      </div>
+
+      <div class="item">
+        <img src="明-3.png" ="明-3.png" />
+        <p class="caption">明</p>
+      </div>
+      
+      <div class="item">
+        <img src="C子.png" ="C子.png" />
+        <p class="caption">C子</p>
+      </div>
+      
+      <div class="item">
+        <img src="IMG_1566.PNG" ="IMG_1566.PNG" />
+        <p class="caption">魚骨</p>
+      </div>
+
+       <div class="item">
+        <img src="釉烟2.jpeg" ="釉烟2.jpeg" />
+        <p class="caption">魚骨</p>
+      </div>
+
+      <div class="item">
+        <img src="Kino.jpg" ="Kino.jpg" />
+        <p class="caption">Kino</p>
+      </div>
+
+      <div class="item">
+        <img src="remi-2.PNG" ="remi-2.PNG" />
+        <p class="caption">remi</p>
+      </div>
+
+      <div class="item">
+        <img src="久捌.jpg" ="久捌.jpg" />
+        <p class="caption">久捌</p>
+      </div>
+
+      <div class="item">
+        <img src="伊比比5.jpg" ="伊比比5.jpg" />
+        <p class="caption">伊比比</p>
+      </div>
+
+      <div class="item">
+        <img src="伏見 さま-1.PNG" ="伏見 さま-1.PNG" />
+        <p class="caption">伏見 さま</p>
+      </div>
+
+      <div class="item">
+        <img src="伏見 さま.png" ="伏見 さま.png" />
+        <p class="caption">伏見 さま</p>
+      </div>
+
+      <div class="item">
+        <img src="侑橋.jpg" ="侑橋.jpg" />
+        <p class="caption">侑橋</p>
+      </div>
+
+      <div class="item">
+        <img src="卷Kyoya.png" ="卷Kyoya.png" />
+        <p class="caption">卷Kyoya</p>
+      </div>
+
+      <div class="item">
+        <img src="唐醋.png" ="唐醋.png" />
+        <p class="caption">唐醋</p>
+      </div>
+
+      <div class="item">
+        <img src="阿魚-1.jpg" ="阿魚-1.jpg" />
+        <p class="caption">阿魚</p>
+      </div>
+
+      <div class="item">
+        <img src="阿魚2.jpg" ="阿魚2.jpg" />
+        <p class="caption">阿魚</p>
+      </div>
+      
+      <div class="item">
+        <img src="子或.png" ="子或.png" />
+        <p class="caption">子或</p>
+      </div>
+
+      <div class="item">
+        <img src="李哀哀.png" ="李哀哀.png" />
+        <p class="caption">李哀哀</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-left" src="柴魚ㄅ(2).png" ="柴魚ㄅ(2).png" />
+        <p class="caption">柴魚ㄅ(2)</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-right" src="海狸茲.png" ="海狸茲.png" />
+        <p class="caption">海狸茲</p>
+      </div>
+
+      <div class="item">
+        <img src="狸央-2.png" ="狸央-2.png" />
+        <p class="caption">狸央</p>
+      </div>
+
+      <div class="item">
+        <img src="狸央.png" ="狸央.png" />
+        <p class="caption">狸央</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-left" src="筆刷狂轉努力趕稿人-1.jpg" ="筆刷狂轉努力趕稿人-1.jpg" />
+        <p class="caption">筆刷狂轉努力趕稿人</p>
+      </div>
+
+      <div class="item">
+        <img src="肥宅1.png" ="肥宅1.png" />
+        <p class="caption">肥宅</p>
+      </div>
+
+      <div class="item">
+        <img src="芋泥琥皮卷.PNG" ="芋泥琥皮卷.PNG" />
+        <p class="caption">芋泥琥皮卷</p>
+      </div>
+
+      <div class="item">
+        <img src="蘇蘇-1.png" ="蘇蘇-1.png" />
+        <p class="caption">蘇蘇</p>
+      </div>
+
+      <div class="item">
+        <img src="費米.png" ="費米.png" />
+        <p class="caption">費米</p>
+      </div>
+
+      <div class="item">
+        <img class="pos-left" src="路欸欸.png" ="路欸欸.png" />
+        <p class="caption">路欸欸</p>
+      </div>
+
+     <div class="item">
+        <img src="數學終於及格了再見吧排列組合.jpg" ="數學終於及格了再見吧排列組合.jpg" />
+        <p class="caption">數學終於及格了再見吧排列組合</p>
+      </div>
+
+      <div class="item">
+        <img src="滑滑.jpg" ="滑滑.jpg" />
+        <p class="caption">滑滑</p>
+      </div>
+     <div class="item">
+        <img src="雞排.jpg" ="雞排.jpg" />
+        <p class="caption">雞排</p>
+      </div>
+
+      <div class="item">
+        <img src="韓子高1.png" ="韓子高1.png" />
+        <p class="caption">韓子高</p>
+      </div>
+      
+      <div class="item">
+        <img src="一六.jpg" ="一六.jpg" />
+        <p class="caption">一六</p>
+      </div>
+
+      <div class="item">
+        <img src="白白醬.png" ="白白醬.png" />
+        <p class="caption">白白醬</p>
+      </div>
+
+      <div class="item">
+        <img src="噗幣轉蛋(14).png" ="噗幣轉蛋(14).png" />
+        <p class="caption">噗幣轉蛋</p>
+      </div>
+
+      <div class="item">
+        <img src="噗幣轉蛋(13).png" ="噗幣轉蛋(13).png" />
+        <p class="caption">噗幣轉蛋</p>
+      </div>
+
+      <div class="item">
+        <img src="噗幣轉蛋(4).png" ="噗幣轉蛋(4).png" />
+        <p class="caption">噗幣轉蛋</p>
+      </div>
+
+      <div class="item">
+        <img src="噗幣轉蛋(9).png" ="噗幣轉蛋(9).png" />
+        <p class="caption">噗幣轉蛋</p>
+      </div>
+</div>
+
+    <!-- 下一頁（本質是往下） -->
+    <button id="next" class="btn">〉</button>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <img id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
